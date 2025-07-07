@@ -4,14 +4,9 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/contact", label: "Contact" },
-  { href: "/terms", label: "Terms" },
-  { href: "/privacy", label: "Privacy" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/about", label: "About" },
   { href: "https://wa.me/919876543210", label: "Call Now" },
 ];
 

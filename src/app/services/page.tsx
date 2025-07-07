@@ -6,31 +6,47 @@ const services = [
     title: "Hypothecation Removal (RC Loan Clearance)",
     desc: "Terminate loan records from your RC once your loan is closed. End-to-end support: docs, RTO visit, follow-up.",
     icon: "/file.svg",
+    serviceList: ["All major banks supported", "7-day processing guarantee", "Cars & motorcycles"],
+    price: "₹1,999",
   },
   {
     title: "Duplicate RC Issuance",
     desc: "Lost your RC? We help you get a duplicate issued quickly and easily.",
     icon: "/window.svg",
+    serviceList: ["All major banks supported", "7-day processing guarantee", "Cars & motorcycles"],
+    price: "₹999",
   },
   {
     title: "Address Change on RC",
     desc: "Update your address on your vehicle RC without the hassle of RTO visits.",
     icon: "/globe.svg",
+    serviceList: ["All major banks supported", "7-day processing guarantee", "Cars & motorcycles"],
+    price: "₹299",
+  },
+  {
+    title: "NOC Assistance",
+    desc: "Get No Objection Certificate from your bank quickly for vehicle sale or transfer purposes.",
+    icon: "/window.svg",
+    serviceList: ["Bank coordination handled", "Fast 3-5 day delivery", "Original document delivery"],
+    price: "₹999",
   },
   {
     title: "Ownership Transfer",
     desc: "Buy or sell a vehicle? We handle the RC ownership transfer process for you.",
     icon: "/vercel.svg",
+    serviceList: ["All major banks supported", "7-day processing guarantee", "Cars & motorcycles", "Ownership transfer"],
+    price: "₹299",
   },
   {
     title: "Doorstep Pickup & Delivery",
     desc: "Available in select cities for premium users.",
     icon: "/globe.svg", 
+    serviceList: ["Free pickup in metro cities", "Secure document handling", "Real-time tracking"],
+    price: "₹299",
   },
 ];
 
 export default function Services() {
-
   return (
     <>
       <Head>
@@ -49,117 +65,33 @@ export default function Services() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Hypothecation Removal */}
-                <div className="card hover:shadow-lg transition-shadow duration-300">
+                {services.map((service) => (
+                <div key={service.title} className="card hover:shadow-lg transition-shadow duration-300">
                     <div className="text-center">
                         <div className="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                             <svg className="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1z" clip-rule="evenodd"/>
                             </svg>
                         </div>
-                        <h3 className="text-xl font-bold text-secondary-900 mb-3">Hypothecation Removal</h3>
-                        <p className="text-secondary-600 mb-4">
-                            Remove loan marks from your RC after EMI completion. Works for all banks and financial institutions.
+                        <h3 className="text-xl font-bold text-secondary-900 mb-2">{service.title}</h3>
+                        <p className="text-secondary-600 mb-6">
+                            {service.desc}
                         </p>
-                        <ul className="text-sm text-secondary-600 space-y-2 mb-6">
+                        <div className="text-4xl font-bold text-primary mb-2" id="basicPrice">{service.price}</div>
+                        <p className="text-sm text-secondary-500 mb-6">All inclusive pricing</p>
+                        <ul className="text-sm text-secondary-600 space-y-2">
+                            {service.serviceList.map((item) => (
                             <li className="flex items-center">
                                 <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                 </svg>
-                                All major banks supported
+                                {item}
                             </li>
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                7-day processing guarantee
-                            </li>
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                Cars & motorcycles
-                            </li>
+                            ))}
                         </ul>
-                        <div className="text-2xl font-bold text-primary mb-4">₹1,999</div>
-                        {/* <button onClick={() => {}} className="btn-primary w-full">Get Started</button> */}
                     </div>
                 </div>
-
-                {/* NOC Assistance */}
-                <div className="card hover:shadow-lg transition-shadow duration-300">
-                    <div className="text-center">
-                        <div className="bg-success-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <svg className="h-8 w-8 text-success" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
-                            </svg>
-                        </div>
-                        <h3 className="text-xl font-bold text-secondary-900 mb-3">NOC Assistance</h3>
-                        <p className="text-secondary-600 mb-4">
-                            Get No Objection Certificate from your bank quickly for vehicle sale or transfer purposes.
-                        </p>
-                        <ul className="text-sm text-secondary-600 space-y-2 mb-6">
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                Bank coordination handled
-                            </li>
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                Fast 3-5 day delivery
-                            </li>
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                Original document delivery
-                            </li>
-                        </ul>
-                        <div className="text-2xl font-bold text-primary mb-4">₹999</div>
-                        {/* <button onClick={() => {}} className="btn-primary w-full">Get Started</button> */}
-                    </div>
-                </div>
-
-                {/* Pickup & Delivery */}
-                <div className="card hover:shadow-lg transition-shadow duration-300">
-                    <div className="text-center">
-                        <div className="bg-accent-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                            <svg className="h-8 w-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
-                                <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707L16 7.586A1 1 0 0015.414 7H14z"/>
-                            </svg>
-                        </div>
-                        <h3 className="text-xl font-bold text-secondary-900 mb-3">Pickup & Delivery</h3>
-                        <p className="text-secondary-600 mb-4">
-                            Convenient document pickup from your location and secure delivery of processed documents.
-                        </p>
-                        <ul className="text-sm text-secondary-600 space-y-2 mb-6">
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                Free pickup in metro cities
-                            </li>
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                Secure document handling
-                            </li>
-                            <li className="flex items-center">
-                                <svg className="h-4 w-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                Real-time tracking
-                            </li>
-                        </ul>
-                        <div className="text-2xl font-bold text-primary mb-4">₹299</div>
-                        {/* <button onClick={() => {}} className="btn-primary w-full">Get Started</button> */}
-                    </div>
-                </div>
+                ))}
             </div>
 
             {/* Service Checker */}

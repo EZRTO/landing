@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: "Do you provide services in all Indian states?",
-    a: "Yes! We provide hypothecation removal services across all 28 Indian states and 8 union territories. Our network of verified RTO agents ensures consistent service quality regardless of your location. Use our pincode checker above to confirm service availability and get estimated processing times for your area.",
+    a: "Yes! We provide hypothecation removal services across all 28 Indian states and 8 union territories. Our network of verified RTO agents ensures consistent service quality regardless of your location. Use our pincode checker at services section to confirm service availability and get estimated processing times for your area.",
     icon: "/vercel.svg",
   },
   {

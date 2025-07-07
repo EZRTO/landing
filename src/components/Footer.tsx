@@ -5,7 +5,6 @@ export default function Footer() {
     <footer className="bg-secondary-900 text-white py-12 border-t border-secondary-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                {/* Company Info */}
                 <div>
                     <div className="flex items-center mb-4">
                         <svg className="h-8 w-8 text-primary mr-3" viewBox="0 0 32 32" fill="currentColor">
@@ -35,36 +34,33 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Services */}
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Services</h4>
                     <ul className="space-y-2 text-secondary-300">
-                        <li><Link href="#services" className="hover:text-white">Hypothecation Removal</Link></li>
-                        <li><Link href="#services" className="hover:text-white">NOC Assistance</Link></li>
-                        <li><Link href="#services" className="hover:text-white">Document Pickup</Link></li>
-                        <li><Link href="#services" className="hover:text-white">Express Processing</Link></li>
+                        <li><Link href="/services" className="hover:text-white">Hypothecation Removal</Link></li>
+                        <li><Link href="/services" className="hover:text-white">NOC Assistance</Link></li>
+                        <li><Link href="/services" className="hover:text-white">Document Pickup</Link></li>
+                        <li><Link href="/services" className="hover:text-white">Express Processing</Link></li>
                     </ul>
                 </div>
 
-                {/* Support */}
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Support</h4>
                     <ul className="space-y-2 text-secondary-300">
-                        <li><Link href="#faq" className="hover:text-white">FAQ</Link></li>
-                        <li><Link href="#" className="hover:text-white">Help Center</Link></li>
-                        <li><Link href="#" className="hover:text-white">Track Application</Link></li>
-                        <li><Link href="#" className="hover:text-white">Contact Us</Link></li>
+                        <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
+                        <li><Link href="/help" className="hover:text-white">Help Center</Link></li>
+                        <li><Link href="/track" className="hover:text-white">Track Application</Link></li>
+                        <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
                     </ul>
                 </div>
 
-                {/* Legal */}
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Legal</h4>
                     <ul className="space-y-2 text-secondary-300">
-                        <li><Link href="#" className="hover:text-white">Privacy Policy</Link></li>
-                        <li><Link href="#" className="hover:text-white">Terms of Service</Link></li>
-                        <li><Link href="#" className="hover:text-white">Refund Policy</Link></li>
-                        <li><Link href="#" className="hover:text-white">Security</Link></li>
+                        <li><Link href="/privacy" className="hover:text-white">Privacy Policy</Link></li>
+                        <li><Link href="/terms" className="hover:text-white">Terms of Service</Link></li>
+                        <li><Link href="/refund" className="hover:text-white">Refund Policy</Link></li>
+                        <li><Link href="/security" className="hover:text-white">Security</Link></li>
                     </ul>
                 </div>
             </div>
@@ -75,4 +71,4 @@ export default function Footer() {
         </div>
     </footer>
   );
-} 
+}
