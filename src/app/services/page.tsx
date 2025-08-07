@@ -3,7 +3,7 @@ import Head from "next/head";
 
 const services = [
   {
-    title: "Hypothecation Removal (RC Loan Clearance)",
+    title: "Hypothecation Removal",
     desc: "Terminate loan records from your RC once your loan is closed. End-to-end support: docs, RTO visit, follow-up.",
     icon: "/file.svg",
     serviceList: ["All major banks supported", "7-day processing guarantee", "Cars & motorcycles"],
