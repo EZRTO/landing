@@ -254,7 +254,7 @@ export default function Price() {
                 </div>
             </div>
         </div>
-    </section>
+            </section>
         </>
     );
 }
