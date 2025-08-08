@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { IconArrowRight, IconCalendar, IconClock, IconUser, IconTag } from "@tabler/icons-react";
+import Image from "next/image";
+import { IconArrowRight, IconCalendar, IconClock, IconUser } from "@tabler/icons-react";
 
 export const metadata: Metadata = {
   title: "Blog - RTOEase",
@@ -98,9 +99,11 @@ export default function Blog() {
             </div>
           </div>
         </div>
+      </section>
 
       {/* Featured Post Section */}
       {featuredPost && (
+        <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-r from-primary to-primary-700 rounded-2xl shadow-lg overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -132,17 +135,23 @@ export default function Blog() {
                   </button>
                 </div>
                 <div className="relative">
-                  <img 
+                  <Image 
                     src={featuredPost.image} 
                     alt={featuredPost.title}
+                    width={600}
+                    height={400}
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
             </div>
           </div>
+        </section>
       )}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+
+      {/* Blog Posts Section */}
+      <section className="py-12 bg-secondary-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
@@ -164,9 +173,11 @@ export default function Blog() {
             {regularPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-2xl shadow-lg border border-blue-100 overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="relative">
-                  <img 
+                  <Image 
                     src={post.image} 
                     alt={post.title}
+                    width={400}
+                    height={200}
                     className="w-full h-48 object-cover"
                   />
                   <div className="absolute top-4 left-4">

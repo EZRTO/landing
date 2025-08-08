@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { IconArrowRight, IconChevronDown, IconHelp } from "@tabler/icons-react";
+import { IconChevronDown, IconHelp } from "@tabler/icons-react";
 
 const faqs = [
   {
@@ -150,7 +150,7 @@ export default function FAQ() {
             <div className="bg-white rounded-2xl shadow-lg border border-blue-100 p-8">
               <h3 className="text-xl font-bold text-blue-700 mb-4">Still have questions?</h3>
               <p className="text-gray-600 mb-6">
-                Can't find the answer you're looking for? Our support team is here to help you 24/7.
+                Can&apos;t find the answer you&apos;re looking for? Our support team is here to help you 24/7.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 

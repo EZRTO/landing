@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { IconArrowRight, IconSearch, IconCheck, IconClock, IconAlertCircle, IconFileText, IconTruck, IconCircleCheck } from "@tabler/icons-react";
+import { IconSearch, IconClock, IconAlertCircle, IconCircleCheck } from "@tabler/icons-react";
 
 interface TrackingStep {
   id: number;

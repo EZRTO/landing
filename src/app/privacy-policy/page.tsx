@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 leading-tight">
                 <span className="text-primary">Privacy Policy</span>
               </h1>
-              <p className=" mb-6 font-semibold text-secondary-700">Date of last revision : 31 Jul'23</p>
+              <p className=" mb-6 font-semibold text-secondary-700">Date of last revision : 31 Jul&apos;23</p>
               <p className="text-lg sm:text-xl text-secondary-600 mb-8 leading-relaxed">
                 Your privacy is our top priority. Learn how we protect, use, and respect your information at every step.
               </p>

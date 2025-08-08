@@ -1,7 +1,6 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import { Fragment } from "react";
-import { IconAlertCircle, IconAlertCircleFilled, IconArrowSharpTurnRight, IconBrandWhatsapp, IconCalculator, IconCheck, IconCross, IconSignRight, IconTicket, IconX } from "@tabler/icons-react";
+import Image from "next/image";
+import { IconAlertCircleFilled, IconBrandWhatsapp, IconCalculator, IconCheck, IconX } from "@tabler/icons-react";
 
 const services = [
     {
@@ -78,7 +77,13 @@ export default function Home() {
                 {/* Hero Image */}
                 <div className="relative">
                     <div className="bg-white rounded-2xl shadow-xl p-8">
-                        <img src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vehicle RC Document Processing" className="w-full h-64 object-cover rounded-lg mb-6" loading="lazy"  />
+                        <Image 
+                            src="https://images.pexels.com/photos/3806288/pexels-photo-3806288.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                            alt="Vehicle RC Document Processing" 
+                            width={600}
+                            height={256}
+                            className="w-full h-64 object-cover rounded-lg mb-6" 
+                        />
                         
                         {/* Process Steps */}
                         <div className="space-y-4">
@@ -254,7 +259,13 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="testimonial-card">
                         <div className="flex items-center mb-4">
-                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Rajesh Kumar" className="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" />
+                            <Image 
+                                src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" 
+                                alt="Rajesh Kumar" 
+                                width={48}
+                                height={48}
+                                className="w-12 h-12 rounded-full object-cover mr-4" 
+                            />
                             <div>
                                 <div className="font-semibold text-secondary-900">Rajesh Kumar</div>
                                 <div className="text-sm text-secondary-600">Mumbai, Maharashtra</div>
@@ -278,14 +289,20 @@ export default function Home() {
                             </svg>
                         </div>
                         <p className="text-secondary-700 mb-4">
-                            "Saved me weeks of RTO visits! My car loan was cleared but the hypothecation mark was still there. RCEase completed everything in just 6 days. Highly recommended!"
+                            &ldquo;Saved me weeks of RTO visits! My car loan was cleared but the hypothecation mark was still there. RCEase completed everything in just 6 days. Highly recommended!&rdquo;
                         </p>
                         <div className="text-sm text-success font-medium">✓ Verified Customer</div>
                     </div>
 
                     <div className="testimonial-card">
                         <div className="flex items-center mb-4">
-                            <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_150.jpg" alt="Priya Sharma" className="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" />
+                            <Image 
+                                src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_150.jpg" 
+                                alt="Priya Sharma" 
+                                width={48}
+                                height={48}
+                                className="w-12 h-12 rounded-full object-cover mr-4" 
+                            />
                             <div>
                                 <div className="font-semibold text-secondary-900">Priya Sharma</div>
                                 <div className="text-sm text-secondary-600">Bangalore, Karnataka</div>
@@ -309,14 +326,20 @@ export default function Home() {
                             </svg>
                         </div>
                         <p className="text-secondary-700 mb-4">
-                            "Professional service with regular updates. They picked up my documents from home and delivered the updated RC within a week. Worth every rupee!"
+                            &ldquo;Professional service with regular updates. They picked up my documents from home and delivered the updated RC within a week. Worth every rupee!&rdquo;
                         </p>
                         <div className="text-sm text-success font-medium">✓ Verified Customer</div>
                     </div>
 
                     <div className="testimonial-card">
                         <div className="flex items-center mb-4">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Amit Patel" className="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" />
+                            <Image 
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                                alt="Amit Patel" 
+                                width={48}
+                                height={48}
+                                className="w-12 h-12 rounded-full object-cover mr-4" 
+                            />
                             <div>
                                 <div className="font-semibold text-secondary-900">Amit Patel</div>
                                 <div className="text-sm text-secondary-600">Ahmedabad, Gujarat</div>
@@ -340,7 +363,7 @@ export default function Home() {
                             </svg>
                         </div>
                         <p className="text-secondary-700 mb-4">
-                            "I was skeptical at first, but RCEase delivered exactly what they promised. My bike RC is now clean without any loan mark. Great service!"
+                            &ldquo;I was skeptical at first, but RCEase delivered exactly what they promised. My bike RC is now clean without any loan mark. Great service!&rdquo;
                         </p>
                         <div className="text-sm text-success font-medium">✓ Verified Customer</div>
                     </div>

@@ -17,7 +17,7 @@ export default function ContactUs() {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 leading-tight">
                 <span className="text-primary">Contact Us</span>
               </h1>
-              <p className="mb-6 font-semibold text-secondary-700">We're here to help you with all your vehicle documentation needs</p>
+              <p className="mb-6 font-semibold text-secondary-700">We&apos;re here to help you with all your vehicle documentation needs</p>
               <p className="text-lg sm:text-xl text-secondary-600 mb-8 leading-relaxed">
                 Have questions about our services? Need help with your application? Our team is ready to assist you 24/7.
               </p>

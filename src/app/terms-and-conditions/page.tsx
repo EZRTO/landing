@@ -17,7 +17,7 @@ export default function TermsAndConditions() {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 leading-tight">
                 <span className="text-primary">Terms & Conditions</span>
               </h1>              
-              <p className=" mb-6 font-semibold text-secondary-700">Date of last revision : 31 Jul'23</p>
+              <p className=" mb-6 font-semibold text-secondary-700">Date of last revision : 31 Jul&apos;23</p>
               <p className="text-lg sm:text-xl text-secondary-600 mb-8 leading-relaxed">
                 Please read these terms carefully before using RTOEase. We believe in transparency, trust, and a hassle-free experience for every vehicle owner.
               </p>

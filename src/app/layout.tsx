@@ -5,6 +5,7 @@ import Head from "next/head";
 import JsonLd from "../components/JsonLd";
 
 export const metadata = {
+  metadataBase: new URL('https://rtoease.in'),
   title: "RTOEase - Simplify Vehicle Formalities in India",
   description: "RTOEase helps you simplify vehicle formalities in India. Fast, reliable, and hassle-free service across India.",
   openGraph: {
@@ -22,6 +23,12 @@ export const metadata = {
     ],
     locale: "en_IN",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RTOEase - Simplify Vehicle Formalities in India",
+    description: "RTOEase helps you simplify vehicle formalities in India. Fast, reliable, and hassle-free service across India.",
+    images: ["/globe.svg"],
   },
 };
 
