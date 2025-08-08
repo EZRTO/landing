@@ -1,0 +1,81 @@
+name: Build and deploy rtoease-landing to public_admin
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master, develop ]
+    paths:
+      - '**'
+  pull_request:
+    types: [closed]
+    branches: [main, master, develop]
+
+jobs:
+  build-rtoease-landing:
+    name: Build rtoease-landing
+    runs-on: ubuntu-latest
+    if: |
+      github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    defaults:
+      run:
+        working-directory: ./
+    
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: './package-lock.json'
+
+      - name: 📦 Install Dependencies
+        run: npm ci
+
+      - name: 🔍 Run Linting
+        run: npm run lint
+
+      - name: 🔨 Build rtoease-landing Project
+        run: npm run build
+
+      - name: 📤 Upload rtoease-landing Project Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rtoease-landing-dist
+          path: ./out
+          retention-days: 30
+
+  deploy-rtoease-landing:
+    name: Deploy rtoease-landing to public_admin
+    runs-on: ubuntu-latest
+    needs: build-rtoease-landing
+    if: |
+      github.event.pull_request.merged == true || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: 🚚 Download rtoease-landing Project Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: rtoease-landing-dist
+          path: ./dist
+
+      - name: 📂 Deploy rtoease-landing Project to public_admin
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.GIT_CPANEL_REACT_SERVER }}
+          username: ${{ secrets.GIT_CPANEL_REACT_USER }}
+          password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
+          protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
+          local-dir: ./dist/
+          server-dir: /public_admin/
+
+      - name: ✅ Deployment Summary
+        run: |
+          echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- **Project:** rtoease-landing" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch:** ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Deployment Target:** public_admin" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status:** ✅ Successfully deployed!" >> $GITHUB_STEP_SUMMARY
+          echo "- **Deployment Time:** $(date)" >> $GITHUB_STEP_SUMMARY
