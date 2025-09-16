@@ -26,7 +26,6 @@ export default function TrackApplication() {
   const [isTracking, setIsTracking] = useState(false);
   const [trackingData, setTrackingData] = useState<TrackingData | null>(null);
 
-  // Sample tracking data
   const sampleTrackingData: TrackingData = {
     trackingNumber: "RTOEASE2024001",
     status: "Processing",
@@ -90,7 +89,6 @@ export default function TrackApplication() {
     e.preventDefault();
     if (trackingNumber.trim()) {
       setIsTracking(true);
-      // Simulate API call
       setTimeout(() => {
         setTrackingData(sampleTrackingData);
         setIsTracking(false);
@@ -126,7 +124,6 @@ export default function TrackApplication() {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-white py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
@@ -143,34 +140,32 @@ export default function TrackApplication() {
         </div>
       </section>
 
-      {/* Tracking Form Section */}
       <section className="py-12 bg-secondary-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Tracking Form */}
           <div className="bg-white rounded-2xl shadow-lg border border-blue-100 p-8 mb-8">
             <h2 className="text-2xl font-bold text-blue-700 mb-6 text-center">Enter Your Tracking Number</h2>
             <form onSubmit={handleTrack} className="max-w-md mx-auto">
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="text"
                   value={trackingNumber}
                   onChange={(e) => setTrackingNumber(e.target.value)}
                   placeholder="Enter tracking number (e.g., RTOEASE2024001)"
-                  className="form-input flex-1"
+                  className="form-input flex-1 w-full min-w-0"
                   required
                 />
                 <button
                   type="submit"
                   disabled={isTracking}
-                  className="btn-primary px-8 py-3 shadow-cta hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 disabled:opacity-50"
+                  className="btn-primary w-full sm:w-auto px-8 py-3 shadow-cta hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 disabled:opacity-50"
                 >
                   {isTracking ? (
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center justify-center gap-2">
                       <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
                       Tracking...
                     </div>
                   ) : (
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center justify-center gap-2">
                       <IconSearch className="h-5 w-5" />
                       Track
                     </div>
@@ -179,7 +174,6 @@ export default function TrackApplication() {
               </div>
             </form>
             
-            {/* Sample Tracking Number */}
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
                 Try with sample tracking number: <span className="font-mono text-primary">RTOEASE2024001</span>
@@ -187,10 +181,8 @@ export default function TrackApplication() {
             </div>
           </div>
 
-          {/* Tracking Results */}
           {trackingData && (
             <div className="bg-white rounded-2xl shadow-lg border border-blue-100 p-8">
-              {/* Application Details */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 p-6 bg-primary-50 rounded-xl">
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-2">Application Details</h3>
@@ -228,13 +220,11 @@ export default function TrackApplication() {
                 </div>
               </div>
 
-              {/* Progress Steps */}
               <div>
                 <h3 className="text-xl font-bold text-blue-700 mb-6">Application Progress</h3>
                 <div className="space-y-6">
                   {trackingData.steps.map((step, index) => (
                     <div key={step.id} className="relative">
-                      {/* Connection Line */}
                       {index < trackingData.steps.length - 1 && (
                         <div className={`absolute left-6 top-12 w-0.5 h-16 ${
                           step.status === "completed" ? "bg-success" : "bg-gray-200"
@@ -259,7 +249,6 @@ export default function TrackApplication() {
                 </div>
               </div>
 
-              {/* Contact Support */}
               <div className="mt-8 p-6 bg-blue-50 rounded-xl text-center">
                 <h4 className="text-lg font-semibold text-blue-700 mb-2">Need Help?</h4>
                 <p className="text-gray-600 mb-4">
