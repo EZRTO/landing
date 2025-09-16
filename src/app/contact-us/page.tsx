@@ -162,7 +162,7 @@ export default function ContactUs() {
                     </span>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
-                      <p className="text-gray-600 mb-2">Mumbai, Maharashtra, India</p>
+                      <p className="text-gray-600 mb-2">Bhagalpur, Bihar, India</p>
                       <p className="text-sm text-gray-500">Serving customers across India</p>
                     </div>
                   </div>
