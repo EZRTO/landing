@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { IconChevronDown, IconHelp } from "@tabler/icons-react";
+import Link from "next/link";
 
 const faqs = [
   {
@@ -79,99 +80,93 @@ export default function FAQ() {
     : faqs.filter(faq => faq.category === selectedCategory);
 
   return (
-    <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-white py-12 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 leading-tight">
-                <span className="text-primary">Frequently Asked Questions</span>
-              </h1>
-              <p className="mb-6 font-semibold text-secondary-700">Get answers to common questions about our services</p>
-              <p className="text-lg sm:text-xl text-secondary-600 mb-8 leading-relaxed">
-                Find quick answers to the most common questions about hypothecation removal, RTO processes, and our services.
-              </p>
-            </div>
+    <section className="bg-gradient-to-br from-primary-50 to-white py-12 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+          <div className="text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 leading-tight">
+              <span className="text-primary">Frequently Asked Questions</span>
+            </h1>
+            <p className="mb-6 font-semibold text-secondary-700">Get answers to common questions about our services</p>
+            <p className="text-lg sm:text-xl text-secondary-600 mb-8 leading-relaxed">
+              Find quick answers to the most common questions about hypothecation removal, RTO processes, and our services.
+            </p>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${
-                  selectedCategory === category
-                    ? "bg-primary text-white"
-                    : "bg-white text-secondary-700 hover:bg-primary hover:text-white"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${
+                selectedCategory === category
+                  ? "bg-primary text-white"
+                  : "bg-white text-secondary-700 hover:bg-primary hover:text-white"
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
-          {/* FAQ Accordion */}
-          <div className="space-y-4">
-            {filteredFaqs.map((faq, i) => (
-              <div key={i} className="bg-white rounded-2xl shadow-lg border border-blue-100 overflow-hidden group hover:shadow-xl transition-shadow duration-300">
-                <button
-                  className="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-primary-200 rounded-2xl"
-                  onClick={() => setOpen(open === i ? null : i)}
-                  aria-expanded={open === i}
-                  aria-controls={`faq-panel-${i}`}
-                >
-                  <div className="flex items-start gap-4">
-                    <span className="bg-primary-100 text-primary rounded-full p-2 mt-1">
-                      <IconHelp className="h-5 w-5" />
-                    </span>
-                    <span className="font-semibold text-secondary-900 text-lg">{faq.q}</span>
-                  </div>
-                  <IconChevronDown 
-                    className={`h-6 w-6 text-primary transform transition-transform duration-300 ${open === i ? 'rotate-180' : ''}`} 
-                  />
-                </button>
-                <div
-                  id={`faq-panel-${i}`}
-                  className={`px-8 pb-6 transition-all duration-300 ${open === i ? 'block' : 'hidden'}`}
-                >
-                  <div className="ml-12 text-gray-700 text-base leading-relaxed">
-                    {faq.a}
-                  </div>
+        <div className="space-y-4">
+          {filteredFaqs.map((faq, i) => (
+            <div key={i} className="bg-white rounded-2xl shadow-lg border border-blue-100 overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <button
+                className="w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-primary-200 rounded-2xl"
+                onClick={() => setOpen(open === i ? null : i)}
+                aria-expanded={open === i}
+                aria-controls={`faq-panel-${i}`}
+              >
+                <div className="flex items-start gap-4">
+                  <span className="bg-primary-100 text-primary rounded-full p-2 mt-1">
+                    <IconHelp className="h-5 w-5" />
+                  </span>
+                  <span className="font-semibold text-secondary-900 text-lg">{faq.q}</span>
+                </div>
+                <IconChevronDown 
+                  className={`h-6 w-6 text-primary transform transition-transform duration-300 ${open === i ? 'rotate-180' : ''}`} 
+                />
+              </button>
+              <div
+                id={`faq-panel-${i}`}
+                className={`px-8 pb-6 transition-all duration-300 ${open === i ? 'block' : 'hidden'}`}
+              >
+                <div className="ml-12 text-gray-700 text-base leading-relaxed">
+                  {faq.a}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
 
-          {/* Contact CTA */}
-          <div className="mt-12 text-center">
-            <div className="bg-white rounded-2xl shadow-lg border border-blue-100 p-8">
-              <h3 className="text-xl font-bold text-blue-700 mb-4">Still have questions?</h3>
-              <p className="text-gray-600 mb-6">
-                Can&apos;t find the answer you&apos;re looking for? Our support team is here to help you 24/7.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="/contact-us" 
-                  className="btn-primary text-lg px-8 py-4 shadow-cta hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
-                >
-                  Contact Support
-                </a>
-                <a 
-                  href="https://wa.me/919876543210" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-success text-white font-semibold px-8 py-4 rounded-lg shadow-md hover:bg-success-700 transition-all duration-200 text-lg text-center"
-                >
-                  WhatsApp Us
-                </a>
-              </div>
+        <div className="mt-12 text-center">
+          <div className="bg-white rounded-2xl shadow-lg border border-blue-100 p-8">
+            <h3 className="text-xl font-bold text-blue-700 mb-4">Still have questions?</h3>
+            <p className="text-gray-600 mb-6">
+              Can&apos;t find the answer you&apos;re looking for? Our support team is here to help you 24/7.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact-us" 
+                className="btn-primary text-lg px-8 py-4 shadow-cta hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200"
+              >
+                Contact Support
+              </Link>
+              <Link
+                href="https://wa.me/919876543210" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-success text-white font-semibold px-8 py-4 rounded-lg shadow-md hover:bg-success-700 transition-all duration-200 text-lg text-center"
+              >
+                WhatsApp Us
+              </Link>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 } 
