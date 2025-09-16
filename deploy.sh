@@ -13,7 +13,7 @@ docker pull $IMAGE_NAME
 docker run -d \
   --name $CONTAINER_NAME \
   --network ezrto_network  \
-  -p 3001:3001 \
+  -p 127.0.0.1:3001:3001 \
   --restart unless-stopped \
   $IMAGE_NAME
 
