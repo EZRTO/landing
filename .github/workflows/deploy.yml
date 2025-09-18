@@ -40,4 +40,4 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no \
             ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} \
-            "GHCR_USERNAME=${{ secrets.GHCR_USERNAME }} bash -s" < deploy.sh
+            "GHCR_USERNAME=${{ secrets.GHCR_USERNAME }} GHCR_TOKEN=${{ secrets.GHCR_TOKEN }} bash -s" < deploy.sh

@@ -3,6 +3,9 @@
 IMAGE_NAME="ghcr.io/${GHCR_USERNAME}/ezrto-landing:latest"
 CONTAINER_NAME="ezrto-landing"
 
+echo "Logging into GHCR..."
+echo "${GHCR_TOKEN}" | docker login ghcr.io -u "${GHCR_USERNAME}" --password-stdin
+
 # Stop and remove old container
 docker rm -f $CONTAINER_NAME || true
 
