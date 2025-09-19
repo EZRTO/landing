@@ -1,4 +1,5 @@
 import { FileText, Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -55,24 +56,24 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-sky-400">Our Services</h3>
             <ul className="space-y-3 text-slate-300">
-              <li><a href="#services" className="hover:text-sky-400 transition-colors">Hypothecation Termination</a></li>
-              <li><a href="#services" className="hover:text-sky-400 transition-colors">Duplicate RC Issuance</a></li>
-              <li><a href="#services" className="hover:text-sky-400 transition-colors">Address Change on RC</a></li>
-              <li><a href="#services" className="hover:text-sky-400 transition-colors">NOC Assistance</a></li>
-              <li><a href="#services" className="hover:text-sky-400 transition-colors">Ownership Transfer</a></li>
-              <li><a href="#services" className="hover:text-sky-400 transition-colors">Doorstep Delivery</a></li>
+              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Hypothecation Termination</Link></li>
+              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Duplicate RC Issuance</Link></li>
+              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Address Change on RC</Link></li>
+              <li><Link href="#services" className="hover:text-sky-400 transition-colors">NOC Assistance</Link></li>
+              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Ownership Transfer</Link></li>
+              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Doorstep Delivery</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4 text-sky-400">Quick Links</h3>
             <ul className="space-y-3 text-slate-300">
-              <li><a href="#services" className="hover:text-sky-400 transition-colors">Services</a></li>
-              <li><a href="#how-it-works" className="hover:text-sky-400 transition-colors">How It Works</a></li>
-              <li><a href="#contact" className="hover:text-sky-400 transition-colors">Contact Us</a></li>
-              <li><a href="/privacy-policy/" className="hover:text-sky-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service/" className="hover:text-sky-400 transition-colors">Terms of Service</a></li>
-              <li><a href="/faq/" className="hover:text-sky-400 transition-colors">FAQ</a></li>
+              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Services</Link></li>
+              <li><Link href="#how-it-works" className="hover:text-sky-400 transition-colors">How It Works</Link></li>
+              <li><Link href="#contact" className="hover:text-sky-400 transition-colors">Contact Us</Link></li>
+              <li><Link href="/privacy-policy/" className="hover:text-sky-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms-of-service/" className="hover:text-sky-400 transition-colors">Terms of Service</Link></li>
+              <li><Link href="/faq/" className="hover:text-sky-400 transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
@@ -104,9 +105,9 @@ export default function Footer() {
             © {currentYear} EZRTO. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="/privacy-policy/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Privacy Policy</a>
-            <a href="/terms-of-service/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Terms of Service</a>
-            <a href="/cookie-policy/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Cookie Policy</a>
+            <Link href="/privacy-policy/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Terms of Service</Link>
+            <Link href="/cookie-policy/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

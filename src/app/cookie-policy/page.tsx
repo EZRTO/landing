@@ -1,4 +1,5 @@
 import { FileText } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Cookie Policy - EZRTO',
@@ -11,16 +12,15 @@ export default function CookiePolicy() {
       <header className="bg-slate-900 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-4">
-            <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
               <FileText className="h-8 w-8 text-sky-400" />
               <span className="text-2xl font-bold">EZRTO</span>
-            </a>
-            <a 
-              href="/" 
+            </Link>
+            <Link href="/" 
               className="text-sky-400 hover:text-sky-300 transition-colors text-sm"
             >
               ← Back to Home
-            </a>
+            </Link>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Cookie Policy</h1>
           <p className="text-xl text-slate-300">Last updated: January 2025</p>
@@ -69,7 +69,7 @@ export default function CookiePolicy() {
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">Analytics Cookies</h3>
                 <p className="text-slate-600">
                   These cookies help us understand how visitors interact with our website by collecting 
-                  and reporting information anonymously. This helps us improve our website's performance 
+                  and reporting information anonymously. This helps us improve our website&apos;s performance 
                   and user experience.
                 </p>
               </div>

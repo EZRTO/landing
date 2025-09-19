@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const services = [
   'RC Transfer',
@@ -50,10 +51,13 @@ export default function Hero() {
       {/* Background Image */}
       {/* Main Hero Section */}
       <div className="relative h-screen w-full">
-        <img
+        <Image
           src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
           alt="Hero background"
-          className="absolute top-0 left-0 w-full h-full object-cover filter blur-xl scale-105"
+          fill
+          priority
+          sizes="100vw"
+          className="absolute top-0 left-0 object-cover filter blur-xl scale-105"
         />
         {/* Overlay Gradient */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-sky-800/40 via-slate-900/30 to-sky-700/30"></div>

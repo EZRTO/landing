@@ -1,4 +1,5 @@
 import { FileText } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Terms of Service - EZRTO',
@@ -11,16 +12,16 @@ export default function TermsOfService() {
       <header className="bg-slate-900 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between mb-4">
-            <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
               <FileText className="h-8 w-8 text-sky-400" />
               <span className="text-2xl font-bold">EZRTO</span>
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/" 
               className="text-sky-400 hover:text-sky-300 transition-colors text-sm"
             >
               ← Back to Home
-            </a>
+            </Link>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Terms of Service</h1>
           <p className="text-xl text-slate-300">Last updated: January 2025</p>
@@ -32,7 +33,7 @@ export default function TermsOfService() {
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-slate-800 mb-4">1. Acceptance of Terms</h2>
             <p className="text-slate-600">
-              By accessing and using EZRTO's services, you accept and agree to be bound by the terms 
+              By accessing and using EZRTO&apos;s services, you accept and agree to be bound by the terms 
               and provision of this agreement. If you do not agree to abide by the above, please do 
               not use this service.
             </p>

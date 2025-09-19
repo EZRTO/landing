@@ -74,7 +74,7 @@ export default function Header() {
         <div className="md:hidden bg-white border-t border-slate-200">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {list.map((item, index) => (
-              <button
+              <button key={index}
                 onClick={() => scrollToSection(item.url)}
                 className="text-slate-600 hover:text-sky-700 transition-colors"
               >
