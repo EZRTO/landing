@@ -53,7 +53,7 @@ export default function Hero() {
         <img
           src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
           alt="Hero background"
-          className="absolute top-0 left-0 w-full h-full object-cover filter blur-xxl scale-105"
+          className="absolute top-0 left-0 w-full h-full object-cover filter blur-xl scale-105"
         />
         {/* Overlay Gradient */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-sky-800/40 via-slate-900/30 to-sky-700/30"></div>
