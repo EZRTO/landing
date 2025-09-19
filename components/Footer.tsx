@@ -70,9 +70,9 @@ export default function Footer() {
               <li><a href="#services" className="hover:text-sky-400 transition-colors">Services</a></li>
               <li><a href="#how-it-works" className="hover:text-sky-400 transition-colors">How It Works</a></li>
               <li><a href="#contact" className="hover:text-sky-400 transition-colors">Contact Us</a></li>
-              <li><a href="/privacy-policy" className="hover:text-sky-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="/terms-of-service" className="hover:text-sky-400 transition-colors">Terms of Service</a></li>
-              <li><a href="/faq" className="hover:text-sky-400 transition-colors">FAQ</a></li>
+              <li><a href="/privacy-policy/" className="hover:text-sky-400 transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms-of-service/" className="hover:text-sky-400 transition-colors">Terms of Service</a></li>
+              <li><a href="/faq/" className="hover:text-sky-400 transition-colors">FAQ</a></li>
             </ul>
           </div>
 
@@ -104,9 +104,9 @@ export default function Footer() {
             © {currentYear} EZRTO. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="/privacy-policy" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Privacy Policy</a>
-            <a href="/terms-of-service" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Terms of Service</a>
-            <a href="/cookie-policy" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Cookie Policy</a>
+            <a href="/privacy-policy/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Terms of Service</a>
+            <a href="/cookie-policy/" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
