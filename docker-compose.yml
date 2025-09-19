@@ -1,9 +1,0 @@
-version: "3.9"
-
-services:
-  landing-app:
-    build: .
-    container_name: ezrto-landing-container
-    ports:
-      - "3001:3001"
-    restart: always
