@@ -43,7 +43,7 @@ export default function Header() {
 
         <nav className="hidden md:flex items-center space-x-8">
           {list.map((item, index) => (
-            <button
+            <button key={index}
               onClick={() => scrollToSection(item.url)}
               className="text-slate-600 hover:text-sky-700 transition-colors"
             >
