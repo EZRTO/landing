@@ -56,21 +56,21 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-sky-400">Our Services</h3>
             <ul className="space-y-3 text-slate-300">
-              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Hypothecation Termination</Link></li>
-              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Duplicate RC Issuance</Link></li>
-              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Address Change on RC</Link></li>
-              <li><Link href="#services" className="hover:text-sky-400 transition-colors">NOC Assistance</Link></li>
-              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Ownership Transfer</Link></li>
-              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Doorstep Delivery</Link></li>
+              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Hypothecation Termination</Link></li>
+              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Duplicate RC Issuance</Link></li>
+              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Address Change on RC</Link></li>
+              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">NOC Assistance</Link></li>
+              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Ownership Transfer</Link></li>
+              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Doorstep Delivery</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4 text-sky-400">Quick Links</h3>
             <ul className="space-y-3 text-slate-300">
-              <li><Link href="#services" className="hover:text-sky-400 transition-colors">Services</Link></li>
-              <li><Link href="#how-it-works" className="hover:text-sky-400 transition-colors">How It Works</Link></li>
-              <li><Link href="#contact" className="hover:text-sky-400 transition-colors">Contact Us</Link></li>
+              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Services</Link></li>
+              <li><Link href="/#how-it-works" className="hover:text-sky-400 transition-colors">How It Works</Link></li>
+              <li><Link href="/#contact" className="hover:text-sky-400 transition-colors">Contact Us</Link></li>
               <li><Link href="/privacy-policy/" className="hover:text-sky-400 transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms-of-service/" className="hover:text-sky-400 transition-colors">Terms of Service</Link></li>
               <li><Link href="/faq/" className="hover:text-sky-400 transition-colors">FAQ</Link></li>
