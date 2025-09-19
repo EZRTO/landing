@@ -1,5 +1,6 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import { FileText } from 'lucide-react';
-import Link from 'next/link';
 
 export const metadata = {
   title: 'Cookie Policy - EZRTO',
@@ -9,23 +10,29 @@ export const metadata = {
 export default function CookiePolicy() {
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-slate-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between mb-4">
-            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-              <FileText className="h-8 w-8 text-sky-400" />
-              <span className="text-2xl font-bold">EZRTO</span>
-            </Link>
-            <Link href="/" 
-              className="text-sky-400 hover:text-sky-300 transition-colors text-sm"
-            >
-              ← Back to Home
-            </Link>
+      <Header />
+
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white py-20 mt-16">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-center mb-6">
+              <div className="bg-sky-600/20 p-4 rounded-full">
+                <FileText className="h-12 w-12 text-sky-400" />
+              </div>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Cookie <span className="text-sky-400">Policy</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-300 mb-4">
+              Learn how we use cookies and how you can control them
+            </p>
+            <p className="text-lg text-slate-400">
+              Last updated: January 2025
+            </p>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Cookie Policy</h1>
-          <p className="text-xl text-slate-300">Last updated: January 2025</p>
         </div>
-      </header>
+      </section>
 
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto prose prose-lg">
@@ -159,6 +166,7 @@ export default function CookiePolicy() {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

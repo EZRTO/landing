@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { FileText } from 'lucide-react';
 
@@ -115,6 +116,8 @@ export default function PrivacyPolicy() {
           </section>
         </div>
       </main>
+      
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import { HelpCircle } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'FAQ - EZRTO',
@@ -12,7 +13,6 @@ export default function FAQPage() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white py-20 mt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 text-center">
@@ -108,6 +108,8 @@ export default function FAQPage() {
           </div>
         </div>
       </main>
+      
+      <Footer />
     </div>
   );
 } 
