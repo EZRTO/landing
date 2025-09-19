@@ -72,7 +72,7 @@ export default function Footer() {
               <li><a href="#contact" className="hover:text-sky-400 transition-colors">Contact Us</a></li>
               <li><a href="/privacy-policy" className="hover:text-sky-400 transition-colors">Privacy Policy</a></li>
               <li><a href="/terms-of-service" className="hover:text-sky-400 transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-sky-400 transition-colors">FAQ</a></li>
+              <li><a href="/faq" className="hover:text-sky-400 transition-colors">FAQ</a></li>
             </ul>
           </div>
 
