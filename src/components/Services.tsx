@@ -15,6 +15,7 @@ import {
   Truck,
   ArrowRight 
 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Services() {
   const services = [
@@ -22,37 +23,43 @@ export default function Services() {
     icon: Shield,
     title: "Hypothecation Termination",
     description: "Remove loan records from your vehicle RC after the loan is paid off. Get clear ownership documentation.",
-    features: ["Loan clearance documentation", "RC endorsement", "Legal compliance"]
+    features: ["Loan clearance documentation", "RC endorsement", "Legal compliance"],
+    link : "services/hypothecation-termination"
   },
   {
     icon: FileText,
     title: "Duplicate RC Issuance",
     description: "Get a duplicate RC if the original is lost. Quick and hassle-free replacement process.",
-    features: ["Lost RC replacement", "Official documentation", "Fast processing"]
+    features: ["Lost RC replacement", "Official documentation", "Fast processing"],
+    link: ""
   },
   {
     icon: MapPin,
     title: "Address Change on RC",
     description: "Update your address on the vehicle's RC. Ensure your documents reflect your current location.",
-    features: ["Address verification", "Document updates", "State transfers"]
+    features: ["Address verification", "Document updates", "State transfers"],
+    link: ""
   },
   {
     icon: CheckCircle,
     title: "NOC Assistance",
     description: "Obtain a No Objection Certificate from your bank for selling or transferring a vehicle.",
-    features: ["Bank coordination", "NOC processing", "Transfer facilitation"]
+    features: ["Bank coordination", "NOC processing", "Transfer facilitation"],
+    link: ""
   },
   {
     icon: Users,
     title: "Ownership Transfer",
     description: "Handle the RC ownership transfer process when buying or selling a vehicle seamlessly.",
-    features: ["Buyer-seller coordination", "Legal transfers", "Documentation support"]
+    features: ["Buyer-seller coordination", "Legal transfers", "Documentation support"],
+    link: ""
   },
   {
     icon: Truck,
     title: "Doorstep Pickup & Delivery",
     description: "Premium service for secure document handling in select cities. We come to you.",
-    features: ["Secure pickup", "Document handling", "Home delivery"]
+    features: ["Secure pickup", "Document handling", "Home delivery"],
+    link: ""
   }
 ];
 
@@ -95,14 +102,15 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
+                <Link href="/services/hypothecation-termination" className="text-sky-700 hover:bg-sky-50 p-0 h-auto font-semibold group/btn">
                 <Button 
                   variant="ghost" 
-                  onClick={scrollToContact}
                   className="text-sky-700 hover:bg-sky-50 p-0 h-auto font-semibold group/btn"
                 >
                   Learn More 
                   <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                 </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}
