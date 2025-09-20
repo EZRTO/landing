@@ -62,12 +62,6 @@ export default function Hero() {
         {/* Overlay Gradient */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-sky-800/40 via-slate-900/30 to-sky-700/30"></div>
 
-        {/* Optional floating shapes */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-          <div className="absolute -top-32 -left-32 w-72 h-72 bg-sky-400 rounded-full opacity-20 animate-pulse mix-blend-multiply"></div>
-          <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-purple-400 rounded-full opacity-15 animate-pulse mix-blend-multiply"></div>
-        </div>
-
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white drop-shadow-lg">
@@ -77,6 +71,16 @@ export default function Hero() {
             From <span className="text-sky-400">{text}</span>
             <span className="blinking-cursor text-sky-300">|</span> to
             hassle-free vehicle services
+          </p>
+
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white drop-shadow-lg">
+          <span className="text-sky-300">EZRTO </span> Services at Your Doorstep
+          </h1>
+          <p>
+            Simplify vehicle documentation with EZRTO. We specialize in 
+            <strong>hypothecation termination</strong>, 
+            <strong>hypothecation removal</strong>, RC transfer, 
+            and comprehensive <strong>RTO services</strong> delivered directly to your home.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-6">
