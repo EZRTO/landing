@@ -5,35 +5,36 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'EZRTO - Professional Vehicle Documentation Solutions',
+  title: "EZRTO | Easy RTO Services, Hypothecation Termination & Vehicle Documentation",
   description:
-    'Get professional RTO services including hypothecation termination, duplicate RC, address change, NOC assistance, and ownership transfer with doorstep delivery.',
-  keywords:
-    'RTO services, vehicle documentation, RC transfer, hypothecation termination, duplicate RC, NOC assistance, vehicle registration',
-  authors: [{ name: 'EZRTO' }],
+    "EZRTO provides professional RTO services with doorstep delivery. We specialize in hypothecation termination, hypothecation removal, RC transfer, NOC assistance, and complete vehicle documentation services.",
+    keywords:
+    "easy rto, ezrto, hypothecation termination, hypothecation removal, rto service, vehicle documentation, RC transfer, NOC assistance, vehicle hypothecation, car loan removal, bike loan hypothecation, RTO hypothecation termination online",
+  
+  authors: [{ name: "EZRTO" }],
   openGraph: {
-    title: 'EZRTO - Professional Vehicle Documentation Solutions',
+    title: "EZRTO - Easy RTO Services & Vehicle Documentation Solutions",
     description:
-      'Get professional RTO services including hypothecation termination, duplicate RC, address change, NOC assistance, and ownership transfer with doorstep delivery.',
-    url: 'https://ezrto.in',
-    siteName: 'EZRTO',
+      "Get hassle-free RTO services including hypothecation termination, RC transfer, NOC assistance, and more. Doorstep service with trusted professionals.",
+    url: "https://ezrto.in",
+    siteName: "EZRTO",
     images: [
       {
-        url: 'https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg',
+        url: "https://ezrto.in/android-chrome-512x512.png",
         width: 1200,
         height: 630,
-        alt: 'EZRTO - Professional RTO Services',
+        alt: "EZRTO - Easy RTO Services",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'EZRTO - Professional Vehicle Documentation Solutions',
+    card: "summary_large_image",
+    title: "EZRTO | Easy RTO Services & Hypothecation Termination",
     description:
-      'Get professional RTO services including hypothecation termination, duplicate RC, address change, NOC assistance, and ownership transfer with doorstep delivery.',
-    images: ['https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg'],
+      "EZRTO provides reliable RTO services including hypothecation removal, RC transfer, and NOC assistance. Simple, fast, and professional vehicle documentation.",
+    images: ["https://ezrto.in/android-chrome-512x512.png"],
   },
   robots: {
     index: true,
@@ -41,9 +42,15 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://ezrto.in",
+    languages: {
+      'en-IN': 'https://ezrto.in',
     },
   },
 };
@@ -56,29 +63,78 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link rel="canonical" href="https://ezrto.in" />
+        <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'EZRTO',
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "EZRTO",
+              url: "https://ezrto.in",
+              logo: "https://ezrto.in/android-chrome-512x512.png",
+              image: "https://ezrto.in/android-chrome-512x512.png",
               description:
-                'Professional RTO services for vehicle documentation',
-              url: 'https://ezrto.in',
-              logo: 'https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg',
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+1-555-0123',
-                contactType: 'customer service',
+                "EZRTO provides professional RTO services including hypothecation termination, RC transfer, and NOC assistance with doorstep delivery.",
+              telephone: "+91-XXXXXXXXXX",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Your Street Address",
+                addressLocality: "Your City",
+                addressRegion: "Your State",
+                postalCode: "000000",
+                addressCountry: "India",
               },
-              sameAs: [
-                'https://facebook.com/ezrto',
-                'https://twitter.com/ezrto',
-                'https://linkedin.com/company/ezrto',
+              priceRange: "₹₹",
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+91-XXXXXXXXXX",
+                  contactType: "customer service",
+                  areaServed: "IN",
+                  availableLanguage: ["English", "Hindi"],
+                },
               ],
+              sameAs: [
+                "https://facebook.com/ezrto",
+                "https://twitter.com/ezrto",
+                "https://linkedin.com/company/ezrto",
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "RTO Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Hypothecation Termination",
+                      description: "Get hypothecation terminated quickly and hassle-free with EZRTO's doorstep RTO services.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Hypothecation Removal",
+                      description: "Remove hypothecation from your vehicle RC seamlessly with our professional RTO assistance.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "RTO Services",
+                      description: "Complete RTO services including RC transfer, NOC, and vehicle documentation.",
+                    },
+                  },
+                ],
+              },
             }),
           }}
         />
