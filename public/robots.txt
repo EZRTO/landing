@@ -1,0 +1,12 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+
+# Host
+Host: https://ezrto.in
+
+# Sitemaps
+Sitemap: https://ezrto.in/sitemap.xml
+Sitemap: https://ezrto.in/server-sitemap.xml
