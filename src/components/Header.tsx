@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Menu, X, FileText } from 'lucide-react';
+import Image from 'next/image';
+import AppLogo from './logo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,13 +35,8 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-slate-200">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div
-          className="flex items-center space-x-2 cursor-pointer"
-          onClick={() => scrollToSection('hero')}
-        >
-          <FileText className="h-8 w-8 text-sky-700" />
-          <span className="text-xl font-bold text-slate-800">EZRTO</span>
-        </div>
+        
+        <AppLogo />
 
         <nav className="hidden md:flex items-center space-x-8">
           {list.map((item, index) => (
