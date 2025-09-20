@@ -10,7 +10,6 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <FileText className="h-8 w-8 text-sky-400" />
               <span className="text-xl font-bold">EZRTO</span>
             </div>
             <p className="text-slate-300 leading-relaxed">
