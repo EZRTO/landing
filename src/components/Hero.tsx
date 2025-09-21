@@ -49,7 +49,6 @@ export default function Hero() {
 
   return (
     <section className="relative w-full overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <Image
           src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
@@ -63,13 +62,11 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-sky-900/60 via-slate-900/50 to-sky-800/40" />
       </div>
 
-      {/* Main Content */}
       <div className="relative z-10 flex items-center justify-center min-h-[100vh] px-4 sm:px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-7xl w-full">
 
-          {/* LEFT - Headline and CTA */}
           <div className="text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-lg mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
               Simplifying <span className="text-sky-300">RTO Services</span><br />
               For Your Vehicle
             </h1>
@@ -97,7 +94,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* RIGHT - Typewriter Card */}
           <div className="text-center lg:text-left">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0">
               <p className="text-lg sm:text-xl text-white/90 font-medium mb-3">
@@ -117,7 +113,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Trust Indicators */}
       <div className="absolute bottom-5 w-full px-4">
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-white/90 max-w-4xl mx-auto">
           {[
@@ -135,7 +130,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Blinking cursor animation */}
       <style jsx>{`
         .blinking-cursor {
           animation: blink 1s step-start infinite;
