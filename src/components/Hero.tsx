@@ -43,8 +43,8 @@ export default function Hero() {
     return () => clearTimeout(timeout);
   }, [text, isDeleting, serviceIndex]);
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (id: any) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
