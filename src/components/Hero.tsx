@@ -73,7 +73,7 @@ export default function Hero() {
             hassle-free vehicle services
           </p>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white drop-shadow-lg">
+          {/* <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white drop-shadow-lg">
           <span className="text-sky-300">EZRTO </span> Services at Your Doorstep
           </h1>
           <p>
@@ -81,7 +81,7 @@ export default function Hero() {
             <strong>hypothecation termination</strong>, 
             <strong>hypothecation removal</strong>, RC transfer, 
             and comprehensive <strong>RTO services</strong> delivered directly to your home.
-          </p>
+          </p> */}
 
           <div className="mt-10 flex flex-col sm:flex-row gap-6">
             <Button
