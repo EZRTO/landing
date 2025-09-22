@@ -208,8 +208,8 @@ export default function HypothecationTerminationPage() {
               ))}
             </div>
             <p className="text-gray-600 mb-4">
-              "EZRTO made the hypothecation termination process so easy. 
-              I got my clear RC within a week without any hassle."
+              &quot;EZRTO made the hypothecation termination process so easy. 
+              I got my clear RC within a week without any hassle.&quot;
             </p>
             <div className="flex items-center">
               <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
@@ -228,8 +228,8 @@ export default function HypothecationTerminationPage() {
               ))}
             </div>
             <p className="text-gray-600 mb-4">
-              "Professional service with doorstep delivery. 
-              They handled all the paperwork and kept me updated throughout."
+              &quot;Professional service with doorstep delivery. 
+              They handled all the paperwork and kept me updated throughout.&quot;
             </p>
             <div className="flex items-center">
               <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
@@ -248,8 +248,8 @@ export default function HypothecationTerminationPage() {
               ))}
             </div>
             <p className="text-gray-600 mb-4">
-              "Excellent service! They explained everything clearly and 
-              made sure I understood each step of the process."
+              &quot;Excellent service! They explained everything clearly and 
+              made sure I understood each step of the process.&quot;
             </p>
             <div className="flex items-center">
               <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
