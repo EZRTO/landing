@@ -237,7 +237,7 @@ export default function Process() {
         <div className="text-center mt-16">
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-sky-200 max-w-2xl mx-auto">
             <h3 className="text-3xl font-bold text-slate-800 mb-4">
-              Ready to Save <span className="text-sky-600">55+ Hours</span>?
+              Ready to Save <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">55+ Hours</span>?
             </h3>
             <p className="text-slate-600 mb-6">
               Join thousands of smart vehicle owners who chose the hassle-free
@@ -246,7 +246,7 @@ export default function Process() {
             <Button
               onClick={scrollToContact}
               size="lg"
-              className="bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 text-lg shadow-lg transition-transform hover:scale-105"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg shadow-lg transition-transform hover:scale-105"
             >
               Start Your 5-Minute Process Now
             </Button>
