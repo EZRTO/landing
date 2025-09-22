@@ -34,7 +34,7 @@ export default function HowItWorks() {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800 mb-6">
-            How It <span className="text-sky-700">Works</span>
+            How It <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent transition-colors duration-300">Works</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Getting your RTO services completed is simple with our streamlined
