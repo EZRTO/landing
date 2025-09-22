@@ -27,16 +27,11 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section
-      id="how-it-works"
-      className="relative py-24 bg-gradient-to-br from-slate-50 via-sky-50 to-slate-100 overflow-hidden"
-    >
-      {/* Decorative background shapes */}
+    <section id="how-it-works" className="relative py-24 bg-gradient-to-br from-slate-50 via-sky-50 to-slate-100 overflow-hidden">
       <div className="absolute -top-32 -left-32 w-72 h-72 bg-sky-200 rounded-full blur-3xl opacity-30"></div>
       <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-sky-400 rounded-full blur-3xl opacity-20"></div>
 
       <div className="container mx-auto px-4 relative">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-800 mb-6">
             How It <span className="text-sky-700">Works</span>
@@ -47,9 +42,7 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        {/* Steps */}
         <div className="grid md:grid-cols-3 gap-10 relative">
-          {/* Decorative connecting line */}
           <div className="hidden md:block absolute top-[4.5rem] left-1/6 right-1/6 h-1 bg-gradient-to-r from-transparent via-sky-300 to-transparent"></div>
 
           {steps.map((step, index) => (
@@ -58,9 +51,7 @@ export default function HowItWorks() {
               className="relative group bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-sky-300 transition-all duration-500 hover:shadow-2xl rounded-2xl overflow-hidden"
             >
               <CardContent className="p-10 text-center relative z-10">
-                {/* Step icon */}
-                <div className="relative mb-8 flex items-center justify-center">
-                  <div className="absolute inset-0 w-20 h-20 rounded-full bg-gradient-to-tr from-sky-200 to-sky-400 blur-lg opacity-60 group-hover:scale-110 transition-transform duration-500"></div>
+                <div className="relative mb-8 flex items-center justify-center">                  
                   <div className="relative w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center shadow-lg">
                     <step.icon className="h-8 w-8 text-white" />
                   </div>
@@ -68,13 +59,9 @@ export default function HowItWorks() {
                     {step.step}
                   </span>
                 </div>
-
-                {/* Step Title */}
                 <h3 className="text-2xl font-bold text-slate-800 mb-4">
                   {step.title}
                 </h3>
-
-                {/* Step Description */}
                 <p className="text-slate-600 leading-relaxed text-base">
                   {step.description}
                 </p>
@@ -83,7 +70,6 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        {/* Final CTA Card */}
         <div className="text-center mt-20">
           <div className="relative max-w-2xl mx-auto rounded-2xl p-10 bg-white/60 backdrop-blur-md border border-slate-200 shadow-xl">
             <h3 className="text-3xl font-bold text-slate-800 mb-4">
