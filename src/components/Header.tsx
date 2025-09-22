@@ -49,7 +49,7 @@ export default function Header() {
           ))}
           <Button
             onClick={() => scrollToSection('contact')}
-            className="bg-sky-700 hover:bg-sky-800 text-white"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
           >
             Free Consultation
           </Button>
@@ -80,7 +80,7 @@ export default function Header() {
             ))}
             <Button
               onClick={() => scrollToSection('contact')}
-              className="bg-sky-700 hover:bg-sky-800 text-white w-full"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white w-full"
             >
               Free Consultation
             </Button>
