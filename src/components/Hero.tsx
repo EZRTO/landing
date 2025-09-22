@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const services = [
   'RC Transfer',
@@ -51,7 +52,7 @@ export default function Hero() {
     <section className="relative w-full overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg"
+          src="hero_bg.webp"
           alt="Vehicles and roads background"
           fill
           priority
@@ -67,7 +68,8 @@ export default function Hero() {
 
           <div className="text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
-              Simplifying <span className="text-sky-300">RTO Services</span><br />
+              Simplifying <br />
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">RTO Services</span><br />
               For Your Vehicle
             </h1>
 
@@ -79,28 +81,27 @@ export default function Hero() {
               <Button
                 onClick={() => scrollToSection('contact')}
                 size="lg"
-                className="bg-sky-600 hover:bg-sky-700 text-white px-6 sm:px-8 py-3 rounded-xl shadow-lg transition-transform hover:scale-105 text-sm sm:text-base"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 rounded-xl shadow-lg transition-transform hover:scale-105 text-sm sm:text-base"
               >
                 Free Consultation
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => scrollToSection('services')}
-                className="border-sky-400 text-sky-400 hover:bg-white/20 px-6 sm:px-8 py-3 rounded-xl shadow-lg transition-transform hover:scale-105 text-sm sm:text-base"
-              >
-                Our Services
-              </Button>
+              <Link href={"services"}>
+                <Button variant="outline" size="lg"
+                  className="border-sky-400 text-sky-400 hover:bg-white/20 px-6 sm:px-8 py-3 rounded-xl shadow-lg transition-transform hover:scale-105 text-sm sm:text-base"
+                >
+                  Our Services
+                </Button>
+              </Link>
             </div>
           </div>
 
           <div className="text-center lg:text-left">
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/20 shadow-xl max-w-md mx-auto lg:mx-0">
+            <div className=" p-6 sm:p-8   max-w-md mx-auto lg:mx-0">
               <p className="text-lg sm:text-xl text-white/90 font-medium mb-3">
                 We Specialize In:
               </p>
               <div className="h-14 sm:h-16 flex items-center justify-center lg:justify-start">
-                <p className="text-xl sm:text-2xl md:text-3xl text-sky-300 font-semibold tracking-wide">
+                <p className="text-xl sm:text-2xl md:text-3xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold tracking-wide">
                   {text}
                   <span className="blinking-cursor text-sky-400">|</span>
                 </p>
