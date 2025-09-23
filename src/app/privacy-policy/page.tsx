@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       <Header />
       
       {/* Hero Section for Privacy Policy */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white py-20 mt-16">
+      <section className="relative bg-gradient text-white py-20 mt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Privacy <span className="text-sky-400">Policy</span>
+              Privacy <span className="text-gradient">Policy</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-4">
               Your privacy and data security are our top priorities
