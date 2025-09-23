@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { FileText } from 'lucide-react';
+import { Fragment } from 'react';
 
 export const metadata = {
   title: 'Cookie Policy - EZRTO',
@@ -9,9 +10,7 @@ export const metadata = {
 
 export default function CookiePolicy() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-
+    <Fragment>
       <section className="relative bg-gradient text-white py-20 mt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 text-center">
@@ -166,7 +165,6 @@ export default function CookiePolicy() {
           </section>
         </div>
       </main>
-      <Footer />
-    </div>
+    </Fragment>
   );
 }

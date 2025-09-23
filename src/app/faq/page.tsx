@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import { HelpCircle } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Footer from '@/components/Footer';
+import { Fragment } from 'react';
 
 export const metadata = {
   title: 'FAQ - EZRTO',
@@ -10,9 +11,7 @@ export const metadata = {
 
 export default function FAQPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-
+    <Fragment>
       <section className="relative bg-gradient text-white py-20 mt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 text-center">
@@ -108,8 +107,6 @@ export default function FAQPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
-    </div>
+    </Fragment>
   );
 } 

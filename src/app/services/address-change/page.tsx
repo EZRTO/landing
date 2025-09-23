@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, CheckCircle, Clock, FileText, ArrowRight, Star } from 'lucide-react';
+import { Fragment } from 'react';
 
 export const metadata = {
   title: 'Address Change on RC - Vehicle Registration Address Update | EZRTO',
@@ -53,10 +54,7 @@ export default function AddressChange() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      {/* Hero Section */}
+    <Fragment>
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white py-20 mt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4">
@@ -187,7 +185,6 @@ export default function AddressChange() {
         </div>
       </section>
 
-      <Footer />
-    </div>
+    </Fragment>
   );
 }

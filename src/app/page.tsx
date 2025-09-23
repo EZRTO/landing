@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Process from '@/components/Process';
@@ -25,14 +25,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white">
-      <Header />
+    <Fragment>
       <Hero />
       <Process />
       <Services />
       <HowItWorks />
       <Contact />
-      <Footer />
-    </main>
+    </Fragment>
   );
 }

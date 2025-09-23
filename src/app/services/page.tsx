@@ -9,6 +9,7 @@ import { ServiceLists } from '@/util/ServiceLists';
 import Header from '@/components/Header';
 import ServiceCard from '@/components/ServiceCard';
 import Footer from '@/components/Footer';
+import { Fragment } from 'react';
 
 export const metadata: Metadata = {
   title: "RTO Services | EZRTO - Professional Vehicle Documentation Services",
@@ -39,8 +40,7 @@ const benefits = [
 export default function ServicesPage() {
   
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
+    <Fragment>
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -150,7 +150,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-      <Footer/>
-    </div>
+    </Fragment>
   );
 }

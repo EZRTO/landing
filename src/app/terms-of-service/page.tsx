@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { FileText } from 'lucide-react';
+import { Fragment } from 'react';
 
 export const metadata = {
   title: 'Terms of Service - EZRTO',
@@ -9,7 +10,7 @@ export const metadata = {
 
 export default function TermsOfService() {
   return (
-    <div className="min-h-screen bg-white">
+    <Fragment>
       <Header />
 
       <section className="relative bg-gradient text-white py-20 mt-16">
@@ -144,8 +145,6 @@ export default function TermsOfService() {
           </section>
         </div>
       </main>
-      
-      <Footer />
-    </div>
+    </Fragment>
   );
 }
