@@ -5,7 +5,7 @@ export default function NotFound() {
     <main className="min-h-[60vh] flex flex-col items-center justify-center text-center px-6">
       <h1 className="text-5xl md:text-6xl font-bold mb-4">404</h1>
       <p className="text-lg text-slate-600 max-w-xl mb-8">
-        The page you’re looking for doesn’t exist or has been moved.
+        The page you&apos;re looking for doesn&apos;t exist or has been moved.
       </p>
       <Link
         href="/"
