@@ -1,24 +1,7 @@
 ﻿'use client';
 
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { 
-  Shield,
-  FileText,
-  CheckCircle,
-  Users,
-  FileX, 
-  Copy, 
-  MapPin, 
-  FileCheck, 
-  ArrowRightLeft, 
-  Truck,
-  ArrowRight,
-  Clock,
-  Star,
-  Zap
-} from 'lucide-react';
+  ArrowRight} from 'lucide-react';
 import Link from 'next/link';
 import { ServiceLists } from '@/util/ServiceLists';
 import ServiceCard from './ServiceCard';
@@ -46,8 +29,10 @@ export default function Services() {
             <ServiceCard service={service} index={index} key={index}/>
           ))}
         </div>
-        <div>
-          <Link href={"/services"}>View all </Link>
+        <div className="mt-10 flex justify-center">
+          <Link href={"/services"} className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline">
+            View all <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
         
       </div>
