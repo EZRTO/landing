@@ -27,10 +27,7 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
-  const scrollToContact = () => {
-    window.location.href = '/#contact';
-  };
-
+  
   const stats = [
     {
       icon: Users,
@@ -160,7 +157,6 @@ export default function ServicesPage() {
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
               <Button
-                onClick={scrollToContact}
                 size="lg"
                 className="bg-sky-600 hover:bg-sky-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
@@ -171,7 +167,6 @@ export default function ServicesPage() {
                 variant="outline"
                 size="lg"
                 className="border-2 border-sky-400 text-sky-400 hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 hover:scale-105"
-                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Browse Services
               </Button>
@@ -320,7 +315,6 @@ export default function ServicesPage() {
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
               <Button
-                onClick={scrollToContact}
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
@@ -331,7 +325,6 @@ export default function ServicesPage() {
                 variant="outline"
                 size="lg"
                 className="border-2 border-slate-300 text-slate-700 hover:bg-slate-50 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold transition-all duration-300 hover:scale-105"
-                onClick={() => window.location.href = 'tel:+1-555-123-4567'}
               >
                 Call Now: +1 (555) 123-4567
               </Button>
