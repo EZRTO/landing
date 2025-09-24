@@ -207,7 +207,7 @@ export default function ServicesPage() {
               Why Choose <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">EZRTO?</span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
-              Experience the difference with India's most trusted RTO service provider. 
+              Experience the difference with India&apos;s most trusted RTO service provider. 
               Professional, secure, and hassle-free solutions for all your vehicle documentation needs.
             </p>
           </div>
