@@ -19,6 +19,7 @@ import {
   MapPinIcon
 } from 'lucide-react';
 import { ServiceLists } from '@/util/ServiceLists';
+import { Fragment } from 'react';
 
 export const metadata = {
   title: 'All RTO Services - Complete Vehicle Documentation Solutions | EZRTO',
@@ -128,10 +129,7 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      
-      {/* Hero Section */}
+    <Fragment>
       <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 text-white py-16 sm:py-20 lg:py-24 mt-16">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute inset-0 opacity-10">
@@ -332,8 +330,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Fragment>
   );
 }
