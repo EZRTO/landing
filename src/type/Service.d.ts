@@ -7,6 +7,7 @@ type ServiceType = {
     link: string;
     duration: string;
     features: string[];
+    price: number;
 }
 
 type ServiceCardProps = {
