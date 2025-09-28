@@ -72,6 +72,7 @@ export default function Footer() {
               <li><Link href="/#contact" className="hover:text-sky-400 transition-colors">Contact Us</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-sky-400 transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms-of-service" className="hover:text-sky-400 transition-colors">Terms of Service</Link></li>
+              <li><Link href="/refund-policy" className="hover:text-sky-400 transition-colors">Refund Policy</Link></li>
               <li><Link href="/faq" className="hover:text-sky-400 transition-colors">FAQ</Link></li>
             </ul>
           </div>
@@ -106,6 +107,7 @@ export default function Footer() {
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy-policy" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Privacy Policy</Link>
             <Link href="/terms-of-service" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Terms of Service</Link>
+            <Link href="/refund-policy" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Refund Policy</Link>
             <Link href="/cookie-policy" className="text-slate-400 hover:text-sky-400 text-sm transition-colors">Cookie Policy</Link>
           </div>
         </div>
