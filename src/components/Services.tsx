@@ -7,7 +7,14 @@ import { ServiceLists } from '@/util/ServiceLists';
 import ServiceCard from './ServiceCard';
 
 export default function Services() {
-  
+  const popularIndex = ServiceLists.findIndex(s => s.popular);
+  const randomIndex = ServiceLists.findIndex(s => s.popular === false);
+
+
+  const popularService = popularIndex !== -1 ? ServiceLists[popularIndex] : ServiceLists[0];
+  const nonPopularServices = ServiceLists.filter((_, idx) => idx !== popularIndex);
+  const randomServices = nonPopularServices.sort(() => Math.random() - 0.5).slice(0, 2);
+  const displayServices = [randomServices[0], popularService, randomServices[1]];
 
   return (
     <section id="services" className="py-20 bg-white">
@@ -25,7 +32,7 @@ export default function Services() {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {ServiceLists.map((service, index) => (
+          {displayServices.map((service, index) => (
             <ServiceCard service={service} index={index} key={index}/>
           ))}
         </div>
