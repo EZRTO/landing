@@ -61,12 +61,12 @@ export default function ServiceCard({ service, index }: ServiceCardProps){
                 </div>
                 ))}
             </div>
-
-            {/* Duration Info */}
-            <div className="flex items-center gap-2 text-sm text-slate-500 bg-slate-50 rounded-lg p-3">
-                <Clock className="h-4 w-4" />
-                <span className="font-medium">Processing Time:</span>
-                <span className="font-semibold text-blue-600">{service.duration}</span>
+            
+            {/* Price Section */}
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4 border border-blue-100">
+                <div className="flex items-center justify-center gap-2">
+                    <span className="text-2xl font-bold text-blue-600">₹{service.price}</span>
+                </div>
             </div>
 
             {/* CTA Button */}
