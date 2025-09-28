@@ -24,7 +24,8 @@ export const ServiceLists = [
       link: "/services/hypothecation-termination",
       category: "Documentation",
       duration: "3-5 days",
-      popular: true
+      popular: true,
+      price: 2500
     },
     {
       icon: FileText,
@@ -34,7 +35,8 @@ export const ServiceLists = [
       link: "/services/duplicate-rc",
       category: "Replacement",
       duration: "2-3 days",
-      popular: false
+      popular: false,
+      price: 1500
     },
     {
       icon: MapPin,
@@ -44,7 +46,8 @@ export const ServiceLists = [
       link: "/services/address-change",
       category: "Update",
       duration: "5-7 days",
-      popular: false
+      popular: false,
+      price: 1500
     },
     {
       icon: CheckCircle,
@@ -54,7 +57,8 @@ export const ServiceLists = [
       link: "/services/noc-assistance",
       category: "Banking",
       duration: "3-4 days",
-      popular: false
+      popular: false,
+      price: 1500
     },
     {
       icon: Users,
@@ -64,7 +68,8 @@ export const ServiceLists = [
       link: "/services/ownership-transfer",
       category: "Transfer",
       duration: "7-10 days",
-      popular: false
+      popular: false,
+      price: 1500
     },
     {
       icon: Truck,
@@ -74,6 +79,7 @@ export const ServiceLists = [
       link: "/services/doorstep-pickup",
       category: "Premium",
       duration: "Same day",
-      popular: false
+      popular: false,
+      price: 1500
     }
   ];
