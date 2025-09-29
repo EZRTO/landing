@@ -43,7 +43,7 @@ export default function Footer() {
               <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Address Change on RC</Link></li>
               <li><Link href="/#services" className="hover:text-sky-400 transition-colors">NOC Assistance</Link></li>
               <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Ownership Transfer</Link></li>
-              <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Doorstep Delivery</Link></li>
+              {/* <li><Link href="/#services" className="hover:text-sky-400 transition-colors">Doorstep Delivery</Link></li> */}
             </ul>
           </div>
 

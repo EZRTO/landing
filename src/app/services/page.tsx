@@ -82,13 +82,13 @@ export default function ServicesPage() {
       color: 'text-green-600',
       bgColor: 'bg-green-50'
     },
-    {
-      icon: TruckIcon,
-      title: 'Doorstep Service',
-      description: 'Document pickup and delivery right to your doorstep for maximum convenience.',
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-50'
-    },
+    // {
+    //   icon: TruckIcon,
+    //   title: 'Doorstep Service',
+    //   description: 'Document pickup and delivery right to your doorstep for maximum convenience.',
+    //   color: 'text-purple-600',
+    //   bgColor: 'bg-purple-50'
+    // },
     {
       icon: FileTextIcon,
       title: 'Expert Documentation',

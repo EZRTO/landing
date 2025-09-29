@@ -64,9 +64,7 @@ export default function Hero() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
               Simplifying <br />
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">RTO Services</span><br />
-              <span className="text-white/90">Consultancy</span>
-              <br />
-              For Your Vehicle
+              For Your Vehicle Consultancy
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-lg mx-auto lg:mx-0 mb-8">
