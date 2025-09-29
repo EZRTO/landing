@@ -152,7 +152,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-800">Phone</h4>
-                      <p className="text-slate-600">+1 (555) 123-4567</p>
+                      <p className="text-slate-600">+91 8767616877</p>
                       <p className="text-sm text-slate-500">
                         Available 9 AM - 7 PM
                       </p>
@@ -164,8 +164,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-800">Email</h4>
-                      <p className="text-slate-600">info@rtoservices.com</p>
-                      <p className="text-sm text-slate-500">
+                      <p className="text-slate-600">info@ezrto.in</p>
+                      <p className="text-sm text-slate-500">  
                         We respond within 2 hours
                       </p>
                     </div>
@@ -177,9 +177,7 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-slate-800">Address</h4>
                       <p className="text-slate-600">
-                        123 Business Center, Suite 456
-                        <br />
-                        Downtown District, City 12345
+                        Banka Bihar 813102
                       </p>
                     </div>
                   </div>

@@ -1,4 +1,4 @@
-import { FileText, Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { FacebookIcon, InstagramIcon, LinkedinIcon, Mail, Phone, XIcon, YoutubeIcon} from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -17,38 +17,21 @@ export default function Footer() {
               Trusted by thousands of customers across the country.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://twitter.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
+              <Link href="https://www.youtube.com/@ezrto" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors">
+                <YoutubeIcon className="h-5 w-5" />
+              </Link>
+              <Link href="https://www.facebook.com/ezrto" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors">
+                <FacebookIcon className="h-5 w-5" />
+              </Link>
+              <Link href="https://www.instagram.com/ezrto" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors">
+                <InstagramIcon className="h-5 w-5" /> 
+              </Link>
+              <Link href="https://www.linkedin.com/company/ezrto" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors">
+                <LinkedinIcon className="h-5 w-5" />
+              </Link>
+              <Link href="https://x.com/ezrto" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-sky-700 transition-colors">
+                <XIcon className="h-5 w-5" />
+              </Link>
             </div>
           </div>
 
@@ -82,17 +65,17 @@ export default function Footer() {
             <div className="space-y-3 text-slate-300">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-sky-400 flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 8767616877</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-sky-400 flex-shrink-0" />
-                <span>info@rtoservices.com</span>
+                <span>info@ezrto.in</span>
               </div>
               <div className="flex items-start space-x-3">
                 <svg className="h-5 w-5 text-sky-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
-                <span>123 Business Center, Suite 456<br />Downtown District, City 12345</span>
+                <span>Banka Bihar 813102</span>
               </div>
             </div>
           </div>
