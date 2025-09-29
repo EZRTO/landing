@@ -22,7 +22,7 @@ export default function Services() {
         {/* Header Section */}
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-            Expert RTO Services
+            Expert RTO Services Consultancy
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive RTO solutions designed to save your time and ensure compliance with all legal requirements. 

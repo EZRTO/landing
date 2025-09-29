@@ -27,9 +27,9 @@ export default function Header() {
 
   const list = [
     { name: 'Home', url: 'home' },
-    { name: 'Process', url: 'process' },
-    { name: 'Services', url: 'services' },
-    { name: 'How It Works', url: 'how-it-works' },
+    // { name: 'Process', url: 'process' },
+    // { name: 'Services', url: 'services' },
+    // { name: 'How It Works', url: 'how-it-works' },
   ];
 
   return (

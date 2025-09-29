@@ -56,7 +56,7 @@ export default function DuplicateRC() {
               Emergency Service Available
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Duplicate <span className="text-sky-400">RC Issuance</span>
+              Duplicate <span className="text-sky-400">RC Issuance</span> Consultancy
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
               Lost, damaged, or stolen RC? Get a duplicate registration certificate 

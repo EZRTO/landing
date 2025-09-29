@@ -4,20 +4,14 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const services = [
-  'RC Transfer',
-  'NOC Assistance',
-  'Address Change',
-  'Vehicle Registration',
-  'Permit Assistance',
-  'Insurance Renewal',
-];
+import { ServiceLists } from '@/util/ServiceLists';
 
 export default function Hero() {
   const [text, setText] = useState('');
   const [serviceIndex, setServiceIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+
+  const services = ServiceLists.map(service => service.title);
 
   // Typewriter effect
   useEffect(() => {
@@ -70,6 +64,8 @@ export default function Hero() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
               Simplifying <br />
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">RTO Services</span><br />
+              <span className="text-white/90">Consultancy</span>
+              <br />
               For Your Vehicle
             </h1>
 

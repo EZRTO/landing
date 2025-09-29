@@ -64,7 +64,7 @@ export default function NOCAssistance() {
               Bank Coordination Included
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              NOC <span className="text-sky-400">Assistance</span>
+              NOC <span className="text-sky-400">Assistance</span> Consultancy
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
               Need a No Objection Certificate for vehicle transfer or sale? 

@@ -64,7 +64,7 @@ export default function OwnershipTransfer() {
               Complete Transfer Solution
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Ownership <span className="text-sky-400">Transfer</span>
+              Ownership <span className="text-sky-400">Transfer</span> Consultancy
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
               Buying or selling a vehicle? We handle the complete RC ownership 

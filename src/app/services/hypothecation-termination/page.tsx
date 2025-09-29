@@ -65,7 +65,7 @@ export default function HypothecationTermination() {
               Most Popular Service
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Hypothecation <span className="text-sky-400">Termination</span>
+              Hypothecation <span className="text-sky-400">Termination</span> Consultancy
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-8 leading-relaxed">
               Remove loan records from your vehicle RC after loan clearance. 

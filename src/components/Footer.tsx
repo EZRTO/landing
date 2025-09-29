@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-xl font-bold">EZRTO</span>
             </div>
             <p className="text-slate-300 leading-relaxed">
-              Professional RTO services with expert handling of all your vehicle documentation needs. 
+              Professional RTO services consultancy with expert handling of all your vehicle documentation needs. 
               Trusted by thousands of customers across the country.
             </p>
             <div className="flex space-x-4">

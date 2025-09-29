@@ -27,9 +27,9 @@ export default function Home() {
   return (
     <Fragment>
       <Hero />
-      <Process />
+      {/* <Process /> */}
       <Services />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <Contact />
     </Fragment>
   );

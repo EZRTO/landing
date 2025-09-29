@@ -18,7 +18,7 @@ import {
 export const ServiceLists = [
     {
       icon: Shield,
-      title: "Hypothecation Termination",
+      title: "Hypothecation Termination Consultancy",
       description: "Remove loan records from your vehicle RC after the loan is paid off. Get clear ownership documentation.",
       features: ["Loan clearance documentation", "RC endorsement", "Legal compliance"],
       link: "/services/hypothecation-termination",
@@ -29,7 +29,7 @@ export const ServiceLists = [
     },
     {
       icon: FileText,
-      title: "Duplicate RC Issuance",
+      title: "Duplicate RC Issuance Consultancy",
       description: "Get a duplicate RC if the original is lost. Quick and hassle-free replacement process.",
       features: ["Lost RC replacement", "Official documentation", "Fast processing"],
       link: "/services/duplicate-rc",
@@ -40,7 +40,7 @@ export const ServiceLists = [
     },
     {
       icon: MapPin,
-      title: "Address Change on RC",
+      title: "Address Change on RC Consultancy",
       description: "Update your address on the vehicle's RC. Ensure your documents reflect your current location.",
       features: ["Address verification", "Document updates", "State transfers"],
       link: "/services/address-change",
@@ -51,7 +51,7 @@ export const ServiceLists = [
     },
     {
       icon: CheckCircle,
-      title: "NOC Assistance",
+      title: "NOC Assistance Consultancy",
       description: "Obtain a No Objection Certificate from your bank for selling or transferring a vehicle.",
       features: ["Bank coordination", "NOC processing", "Transfer facilitation"],
       link: "/services/noc-assistance",
@@ -62,7 +62,7 @@ export const ServiceLists = [
     },
     {
       icon: Users,
-      title: "Ownership Transfer",
+      title: "Ownership Transfer Consultancy",
       description: "Handle the RC ownership transfer process when buying or selling a vehicle seamlessly.",
       features: ["Buyer-seller coordination", "Legal transfers", "Documentation support"],
       link: "/services/ownership-transfer",
@@ -71,15 +71,15 @@ export const ServiceLists = [
       popular: false,
       price: 1500
     },
-    {
-      icon: Truck,
-      title: "Doorstep Pickup & Delivery",
-      description: "Premium service for secure document handling in select cities. We come to you.",
-      features: ["Secure pickup", "Document handling", "Home delivery"],
-      link: "/services/doorstep-pickup",
-      category: "Premium",
-      duration: "Same day",
-      popular: false,
-      price: 1500
-    }
+    // {
+    //   icon: Truck,
+    //   title: "Doorstep Pickup & Delivery Consultancy",
+    //   description: "Premium service for secure document handling in select cities. We come to you.",
+    //   features: ["Secure pickup", "Document handling", "Home delivery"],
+    //   link: "/services/doorstep-pickup",
+    //   category: "Premium",
+    //   duration: "Same day",
+    //   popular: false,
+    //   price: 1500
+    // }
   ];

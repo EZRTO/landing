@@ -233,10 +233,10 @@ export default function ServicesPage() {
               Complete Service Portfolio
             </Badge>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
-              Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">RTO Services</span>
+              Our <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">RTO Services</span> Consultancy
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
-              From hypothecation termination to doorstep delivery, we provide comprehensive 
+              From hypothecation termination to doorstep pickup, we provide comprehensive 
               RTO solutions with expert handling and guaranteed results.
             </p>
           </div>
