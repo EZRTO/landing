@@ -2,8 +2,8 @@ import { FileText, Shield, Clock, CheckCircle, XCircle } from 'lucide-react';
 import { Fragment } from 'react';
 
 export const metadata = {
-  title: 'Refund Policy - EZRTO',
-  description: 'Refund Policy for EZRTO - Learn about our refund terms and conditions for RTO services.',
+  title: 'Refund Policy - ezrto',
+  description: 'Refund Policy for ezrto - Learn about our refund terms and conditions for RTO services.',
 };
 
 export default function RefundPolicy() {
@@ -25,7 +25,7 @@ export default function RefundPolicy() {
               Transparent and fair refund terms for all our RTO services
             </p>
             <p className="text-lg text-slate-400">
-              Last updated: January 2025
+              Effective Date: September 2025
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function RefundPolicy() {
                 Our Commitment
               </h2>
               <p className="text-slate-700">
-                At EZRTO, we are committed to providing excellent service and customer satisfaction. 
+                At ezrto, we are committed to providing excellent service and customer satisfaction. 
                 We understand that sometimes circumstances change, and we have designed our refund 
                 policy to be fair and transparent while protecting both our customers and our business.
               </p>
@@ -91,7 +91,7 @@ export default function RefundPolicy() {
             <div className="bg-slate-50 rounded-lg p-6 mb-6">
               <h3 className="text-lg font-semibold text-slate-800 mb-4">How to Request a Refund</h3>
               <ol className="list-decimal pl-6 text-slate-700 space-y-3">
-                <li><strong>Contact Us:</strong> Email us at refunds@ezrto.in or call our customer support</li>
+                <li><strong>Contact Us:</strong> Email us at info@ezrto.in or call our customer support</li>
                 <li><strong>Provide Details:</strong> Include your order number, payment reference, and reason for refund</li>
                 <li><strong>Verification:</strong> We will verify your request within 24 hours</li>
                 <li><strong>Processing:</strong> Approved refunds will be processed within 5-7 business days</li>
@@ -118,43 +118,9 @@ export default function RefundPolicy() {
             </div>
           </section>
 
-          {/* Service-Specific Policies */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-800 mb-6">3. Service-Specific Refund Terms</h2>
-            
-            <div className="space-y-6">
-              <div className="border border-slate-200 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-slate-800 mb-3">Hypothecation Termination</h3>
-                <ul className="text-slate-700 space-y-2">
-                  <li>• Full refund if service not initiated within 48 hours</li>
-                  <li>• 50% refund if cancelled after document collection but before RTO submission</li>
-                  <li>• No refund once documents are submitted to RTO</li>
-                </ul>
-              </div>
-
-              <div className="border border-slate-200 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-slate-800 mb-3">RC Transfer & NOC Services</h3>
-                <ul className="text-slate-700 space-y-2">
-                  <li>• Full refund if service not available in your area</li>
-                  <li>• 75% refund if cancelled before document verification</li>
-                  <li>• No refund after RTO processing begins</li>
-                </ul>
-              </div>
-
-              <div className="border border-slate-200 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-slate-800 mb-3">Doorstep Pickup Services</h3>
-                <ul className="text-slate-700 space-y-2">
-                  <li>• Full refund if pickup not available in your area</li>
-                  <li>• 50% refund if cancelled after pickup scheduling</li>
-                  <li>• No refund after documents are collected</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
           {/* Payment Methods */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-800 mb-6">4. Refund Methods</h2>
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">3. Refund Methods</h2>
             
             <div className="bg-slate-50 rounded-lg p-6">
               <p className="text-slate-700 mb-4">
@@ -171,7 +137,7 @@ export default function RefundPolicy() {
 
           {/* Dispute Resolution */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-800 mb-6">5. Dispute Resolution</h2>
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">4. Dispute Resolution</h2>
             
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-yellow-800 mb-3">If You Disagree with Our Decision</h3>
@@ -189,7 +155,7 @@ export default function RefundPolicy() {
 
           {/* Contact Information */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-800 mb-6">6. Contact Us</h2>
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">5. Contact Us</h2>
             
             <div className="bg-slate-50 p-6 rounded-lg">
               <p className="text-slate-700 mb-4">
@@ -200,7 +166,7 @@ export default function RefundPolicy() {
                   <h4 className="font-semibold text-slate-800 mb-2">Refund Department</h4>
                   <p className="text-slate-700">
                     <strong>Email:</strong> refunds@ezrto.in<br />
-                    <strong>Phone:</strong> +91-XXXXXXXXXX<br />
+                    <strong>Phone:</strong> +91-8767616877<br />
                     <strong>Hours:</strong> Mon-Fri, 9 AM - 6 PM IST
                   </p>
                 </div>
@@ -208,7 +174,7 @@ export default function RefundPolicy() {
                   <h4 className="font-semibold text-slate-800 mb-2">Customer Support</h4>
                   <p className="text-slate-700">
                     <strong>Email:</strong> support@ezrto.in<br />
-                    <strong>Phone:</strong> +91-XXXXXXXXXX<br />
+                    <strong>Phone:</strong> +91-8767616877<br />
                     <strong>Hours:</strong> 24/7 Support Available
                   </p>
                 </div>
