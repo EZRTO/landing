@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, User } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -146,6 +146,15 @@ export default function Contact() {
                   Contact Information
                 </h3>
                 <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                    <div className="bg-sky-100 p-3 rounded-lg flex-shrink-0">
+                      <User className="h-6 w-6 text-sky-700" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-800">Name</h4>
+                      <p className="text-slate-600">Saurabh Kant Mishra</p>
+                    </div>
+                  </div>
                   <div className="flex items-start space-x-4">
                     <div className="bg-sky-100 p-3 rounded-lg flex-shrink-0">
                       <Phone className="h-6 w-6 text-sky-700" />
