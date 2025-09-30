@@ -148,10 +148,10 @@ export default function ServicesPage() {
               Complete <span className="bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">RTO Solutions</span>
             </h1>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-slate-300 mb-6 sm:mb-8 leading-relaxed px-4 sm:px-0">
+            {/*<p className="text-lg sm:text-xl md:text-2xl text-slate-300 mb-6 sm:mb-8 leading-relaxed px-4 sm:px-0">
               Professional vehicle documentation services with expert handling, 
               doorstep delivery, and guaranteed results across India.
-            </p>
+            </p>*/}
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
               <Button
