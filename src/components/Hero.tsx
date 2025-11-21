@@ -85,7 +85,7 @@ export default function Hero() {
               >
                 Free Consultation
               </Button>
-              <Link href={"services"}>
+              <Link href={"/services"}>
                 <Button variant="outline" size="lg"
                   className="border-sky-400 text-sky-400 hover:bg-white/20 px-6 sm:px-8 py-3 rounded-xl shadow-lg transition-transform hover:scale-105 text-sm sm:text-base"
                 >
