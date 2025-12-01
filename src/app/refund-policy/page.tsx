@@ -25,7 +25,7 @@ export default function RefundPolicy() {
               Transparent and fair refund terms for all our RTO services
             </p>
             <p className="text-lg text-slate-400">
-              Last updated: January 2025
+              Last updated: November 2025
             </p>
           </div>
         </div>
@@ -169,9 +169,43 @@ export default function RefundPolicy() {
             </div>
           </section>
 
+          {/* Subscription-Based Auto Payments */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">5. Subscription-Based Auto Payments</h2>
+            
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 mb-6">
+              <h3 className="text-lg font-semibold text-slate-800 mb-3">Monthly Auto-Pay for Services</h3>
+              <ul className="list-disc pl-6 text-slate-700 space-y-2">
+                <li>For selected services, you may choose to pay the total service amount in monthly installments instead of a single upfront payment.</li>
+                <li>By enabling monthly auto-pay, you authorize EZRTO and our payment partners to automatically deduct the agreed installment amount from your saved payment method on the scheduled due date every month.</li>
+                <li>The number of installments, amount per installment, and total payable amount (including any applicable taxes/charges) will be clearly shown to you before you confirm the plan.</li>
+                <li>You are responsible for ensuring that your payment method remains valid and has sufficient balance or credit for each monthly auto-debit.</li>
+              </ul>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
+              <h3 className="text-lg font-semibold text-green-800 mb-3">Cancellations, Defaults & Refunds</h3>
+              <ul className="list-disc pl-6 text-green-800 space-y-2">
+                <li>You may request to stop future monthly auto-pay at any time through your account or by contacting our support team. After cancellation, no further installments will be charged, but amounts already paid are generally <strong>non-refundable</strong>, except where required by law.</li>
+                <li>If you cancel before the full service amount is paid, EZRTO may pause, limit, or stop providing the related service, depending on the stage of processing and amounts already paid.</li>
+                <li>If an installment is not successfully debited (for example, due to insufficient balance or card expiry), we may attempt to charge again or ask you to update your payment method. Continued non-payment may result in suspension of service until dues are cleared.</li>
+                <li>If an installment was deducted by mistake (for example, after confirmed cancellation), a full or partial refund may be issued after verification.</li>
+              </ul>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-yellow-800 mb-3">Mandate / Auto-Debit Authorization</h3>
+              <ul className="list-disc pl-6 text-yellow-700 space-y-2">
+                <li>When you set up monthly auto-pay, you may be required to create a recurring e-mandate / auto-debit instruction with your bank, card issuer, UPI app, or wallet provider.</li>
+                <li>Details of the mandate (amount, frequency, validity, and cancellation process) will be shown by the respective payment gateway or provider at the time of authorization.</li>
+                <li>You can revoke or modify this mandate directly through your bank/payment app or by following the process shown in your account. However, revoking the mandate without clearing dues may impact the continuation of your service.</li>
+              </ul>
+            </div>
+          </section>
+
           {/* Dispute Resolution */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-800 mb-6">5. Dispute Resolution</h2>
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">6. Dispute Resolution</h2>
             
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-yellow-800 mb-3">If You Disagree with Our Decision</h3>
@@ -189,7 +223,7 @@ export default function RefundPolicy() {
 
           {/* Contact Information */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-800 mb-6">6. Contact Us</h2>
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">7. Contact Us</h2>
             
             <div className="bg-slate-50 p-6 rounded-lg">
               <p className="text-slate-700 mb-4">
@@ -200,7 +234,7 @@ export default function RefundPolicy() {
                   <h4 className="font-semibold text-slate-800 mb-2">Refund Department</h4>
                   <p className="text-slate-700">
                     <strong>Email:</strong> refunds@ezrto.in<br />
-                    <strong>Phone:</strong> +91-XXXXXXXXXX<br />
+                    <strong>Phone:</strong> +91-8767616877<br />
                     <strong>Hours:</strong> Mon-Fri, 9 AM - 6 PM IST
                   </p>
                 </div>
@@ -208,8 +242,8 @@ export default function RefundPolicy() {
                   <h4 className="font-semibold text-slate-800 mb-2">Customer Support</h4>
                   <p className="text-slate-700">
                     <strong>Email:</strong> support@ezrto.in<br />
-                    <strong>Phone:</strong> +91-XXXXXXXXXX<br />
-                    <strong>Hours:</strong> 24/7 Support Available
+                    <strong>Phone:</strong> +91-8767616877<br />
+                    <strong>Hours:</strong> Mon-Fri, 9 AM - 6 PM IST
                   </p>
                 </div>
               </div>
