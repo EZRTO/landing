@@ -25,7 +25,7 @@ export const ServiceLists = [
       category: "Documentation",
       duration: "3-5 days",
       popular: true,
-      price: 2500
+      price: 2499
     },
     {
       icon: FileText,
@@ -36,7 +36,7 @@ export const ServiceLists = [
       category: "Replacement",
       duration: "2-3 days",
       popular: false,
-      price: 1500
+      price: 1499
     },
     {
       icon: MapPin,
@@ -47,7 +47,7 @@ export const ServiceLists = [
       category: "Update",
       duration: "5-7 days",
       popular: false,
-      price: 1500
+      price: 1499
     },
     {
       icon: CheckCircle,
@@ -58,7 +58,7 @@ export const ServiceLists = [
       category: "Banking",
       duration: "3-4 days",
       popular: false,
-      price: 1500
+      price: 1499
     },
     {
       icon: Users,
@@ -69,7 +69,7 @@ export const ServiceLists = [
       category: "Transfer",
       duration: "7-10 days",
       popular: false,
-      price: 1500
+      price: 1499
     },
     {
       icon: Truck,
@@ -80,6 +80,6 @@ export const ServiceLists = [
       category: "Premium",
       duration: "Same day",
       popular: false,
-      price: 1500
+      price: 1499
     }
   ];
